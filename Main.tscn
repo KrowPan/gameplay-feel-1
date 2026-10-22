@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cmwtpleprsdi7"]
+
+[ext_resource type="PackedScene" uid="uid://cq5w5mkl7647i" path="res://Player.tscn" id="1_glv2v"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_04pw2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uu6xs"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r0du0"]
+
+[node name="Main" type="Node3D" unique_id=589905732]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=167501901]
+transform = Transform3D(-2.345585, 0, 0, 0, 0.06724995, 0, 0, 0, 4.8297915, 0, -0.29655224, 0)
+visible = false
+mesh = SubResource("BoxMesh_04pw2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=803201246]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2024418300]
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=1947834750]
+transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 30, 0, -0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=197331811]
+shape = SubResource("BoxShape3D_uu6xs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1175874274]
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="Node3D" parent="." unique_id=1696193768 instance=ExtResource("1_glv2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92320704, 0)
