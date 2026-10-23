@@ -8,6 +8,10 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_r0du0"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_glv2v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r0du0"]
+
 [node name="Main" type="Node3D" unique_id=589905732]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=167501901]
@@ -16,6 +20,7 @@ visible = false
 mesh = SubResource("BoxMesh_04pw2")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=803201246]
+transform = Transform3D(1, 0, 0, 0, 0.94178784, 0.33620778, 0, -0.33620778, 0.94178784, 0, 3.5008116, 3.4988685)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2024418300]
 
@@ -26,7 +31,128 @@ transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 30, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_uu6xs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1175874274]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.54540074, 0, 0, -0.12450924)
 mesh = SubResource("BoxMesh_r0du0")
 
 [node name="Node3D" parent="." unique_id=1696193768 instance=ExtResource("1_glv2v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92320704, 0)
+
+[node name="Obstacle4" type="StaticBody3D" parent="." unique_id=937223341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.023445, -0.6686404, -10.006886)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Obstacle4" unique_id=628795002]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.0743167, 0, 0, 0, 0.48247838, 1.5454103, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle4" unique_id=1753948538]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 0.56076956, 0, 2.1659997, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Obstacle4" unique_id=364634889]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.142936, 0, 0, 0, 0.48247838, -1.5519779, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle4" unique_id=720585513]
+transform = Transform3D(3.489446, 0, 0, 0, 1.2772876, 0, 0, 0, 0.5681101, 0, 2.1965332, 5.5237637)
+shape = SubResource("BoxShape3D_glv2v")
+
+[node name="Obstacle3" type="StaticBody3D" parent="." unique_id=1497273614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.742484, -0.4673711, -10.037657)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Obstacle3" unique_id=235013352]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.0743167, 0, 0, 0, 0.48247838, 1.5454103, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle3" unique_id=509619292]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 0.56076956, 0, 2.1659997, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Obstacle3" unique_id=1468022003]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.142936, 0, 0, 0, 0.48247838, -1.5519779, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle3" unique_id=1423811750]
+transform = Transform3D(3.489446, 0, 0, 0, 1.2772876, 0, 0, 0, 0.5681101, 0, 2.1965332, 5.5237637)
+shape = SubResource("BoxShape3D_glv2v")
+
+[node name="Obstacle2" type="StaticBody3D" parent="." unique_id=1926501766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3370337, 0.26119852, -10.044569)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Obstacle2" unique_id=1666355583]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.0743167, 0, 0, 0, 0.48247838, 1.5454103, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle2" unique_id=1342724633]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 0.56076956, 0, 2.1659997, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Obstacle2" unique_id=726056587]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.142936, 0, 0, 0, 0.48247838, -1.5519779, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle2" unique_id=102620870]
+transform = Transform3D(3.489446, 0, 0, 0, 1.2772876, 0, 0, 0, 0.5681101, 0, 2.1965332, 5.5237637)
+shape = SubResource("BoxShape3D_glv2v")
+
+[node name="Obstacle" type="StaticBody3D" parent="." unique_id=430925044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0414047, 0.43120754, -10.051481)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Obstacle" unique_id=1454808229]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.0743167, 0, 0, 0, 0.48247838, 1.5454103, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle" unique_id=743805485]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 0.56076956, 0, 2.1659997, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Obstacle" unique_id=414351619]
+transform = Transform3D(0.40888464, 0, 0, 0, 3.142936, 0, 0, 0, 0.48247838, -1.5519779, 0.99327326, 5.560137)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle" unique_id=384888152]
+transform = Transform3D(3.489446, 0, 0, 0, 1.2772876, 0, 0, 0, 0.5681101, 0, 2.1965332, 5.5237637)
+shape = SubResource("BoxShape3D_glv2v")
+
+[node name="Obstacle5" type="StaticBody3D" parent="." unique_id=1145428173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4911647, 0.43120754, -11.270974)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle5" unique_id=1133592173]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+shape = SubResource("BoxShape3D_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle5" unique_id=1155151834]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="Obstacle6" type="StaticBody3D" parent="." unique_id=1519097143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.296629, 0.43120754, -11.270974)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle6" unique_id=572206138]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+shape = SubResource("BoxShape3D_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle6" unique_id=1979716760]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="Obstacle7" type="StaticBody3D" parent="." unique_id=168684191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.153551, 0.43120754, -11.270974)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle7" unique_id=951086532]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+shape = SubResource("BoxShape3D_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle7" unique_id=490094243]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
+
+[node name="Obstacle8" type="StaticBody3D" parent="." unique_id=570924087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.035505, 0.43120754, -11.270974)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle8" unique_id=1343768916]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+shape = SubResource("BoxShape3D_r0du0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Obstacle8" unique_id=77787804]
+transform = Transform3D(3.5023618, 0, 0, 0, 1.2451458, 0, 0, 0, 3.3719316, 0, -0.17032135, 5.52406)
+mesh = SubResource("BoxMesh_r0du0")
